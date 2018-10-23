@@ -1,0 +1,109 @@
+<?php
+
+if(isset($_POST['save'])) {
+
+
+
+
+    $fast = $_POST['first'];
+    $lst = $_POST['last'];
+    $emm = $_POST['email'];
+    $namba = $_POST['phone'];
+
+        echo "Name: ".$fast." ".$lst."";
+        echo "<br/>Phone: ".$namba."";
+
+
+}
+
+?>
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Form</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/sd.css"/> -->
+
+    <style>
+
+        .me {
+            background:gold;
+            width: 50%;
+            margin: 0 auto;
+            height: 300px;
+            padding:10px;
+        }
+
+        .input-box {
+
+            border: none;
+            border-radius: 2px;
+            width: 295px;
+            margin-bottom: 10px;
+            padding:10px;
+
+        }
+        #submit-button {
+            background: #000000;
+            border: none;
+            padding: 10px;
+            font-weight: bold;
+            color: #ffffff;
+        }
+    </style>
+
+</head>
+<body>
+<div class="me">
+    <form method="post" action="#" target="_blank">
+        <table>
+            <tr>
+                <td><input name="first" class="input-box" required="required" type="text" placeholder="Firtstname"/> </td>
+                <td><input name="last" class="input-box" required="required" type="text" placeholder="Lastname"/> </td>
+            </tr>
+            <tr>
+                <td>
+                    <select>
+                        <option selected hidden>Kenya</option>
+                        <option>England</option>
+                        <option>Uganda</option>
+                        <option>SouthAfrica</option>
+                        <option>Ethiopia</option>
+                    </select>
+                </td>
+            </tr>
+
+
+
+
+
+            <tr>
+                <td>
+                    <input type="date" step="3">
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                    <input type="url" step="3">
+                </td>
+            </tr>
+
+
+            <tr>
+                <td>
+                    <button id="submit-button" name="save" type="submit">REGISTER &nbsp;&rarr;</button>
+                </td>
+                <td>
+                    <button>CLEAR</button>
+                </td>
+            </tr>
+
+
+        </table>
+
+
+        <textarea placeholder="Message" rows="4"></textarea>
